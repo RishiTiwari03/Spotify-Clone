@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="logo.png">
 
     <title>Spotify - Web Player: Music for everyone</title>
@@ -13,25 +16,30 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <style>
+    </style>
 </head>
+
 <body>
     <div class="main">
 
         <div class="sidebar">
 
             <div class="nav">
-                <div class="nav-option" style="opacity:1">
+                <div class="nav-option Home" style="opacity:1">
                     <i class="fa-solid fa-house"></i>
                     <a href="#">Home</a>
                 </div>
-                <div class="nav-option">
+                <div class="nav-option Search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                    <input type="text" placeholder="search" style="display:none;margin-left:10px;width:100px">
+                    <a>Search</a> <button class="search-btn" style="margin-left: 30px;">Submit</button>
                 </div>
             </div>
-
+            <!-- <input style="width:90px" type="text" placeholder="search" > -->
             <div class="library">
                 <div class="options">
                     <div class="lib-option nav-option">
@@ -60,7 +68,7 @@
 
         </div>
 
-        <div class="main-content" style="margin: 0 3px;" >
+        <div class="main-content" style="margin: 0 3px;">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
                     <img src="./assets/backward_icon.png" alt="404image">
@@ -68,8 +76,9 @@
                 </div>
                 <div class="sticky-nav-options">
                     <button class="badge nav-item hide">Explore Premium</button>
-                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App</button>
-                <i class="fa-regular fa-user"></i>
+                    <button class="badge nav-item dark-badge install-app"><i class="fa-regular fa-circle-down"
+                            style="margin-right: 5px;"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
                 </div>
             </div>
 
@@ -148,8 +157,8 @@
                     </div>
                 </div>
 
-                    <img src="./assets/album_icon1.png" alt="404albumn_icon1" class="icon1">
-                    <img src="./assets/album_icon2.png" alt="404album_icon2" class="icon2">
+                <img src="./assets/album_icon1.png" alt="404albumn_icon1" class="icon1">
+                <img src="./assets/album_icon2.png" alt="404album_icon2" class="icon2">
 
             </div>
 
@@ -157,7 +166,8 @@
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" alt="404player_icon_1" class="player-control-icon">
                     <img src="./assets/player_icon2.png" alt="404player_icon_2" class="player-control-icon">
-                    <img src="./assets/player_icon3.png" alt="404player_icon_3" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assets/player_icon3.png" alt="404player_icon_3" class="player-control-icon"
+                        style="opacity: 1; height: 2rem;">
                     <img src="./assets/player_icon4.png" alt="404player_icon_4" class="player-control-icon">
                     <img src="./assets/player_icon5.png" alt="404player_icon_5" class="player-control-icon">
                 </div>
@@ -182,5 +192,8 @@
     </div>
 
 
+
+    <script src="script.js"></script>
 </body>
+
 </html>

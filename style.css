@@ -230,7 +230,7 @@ a {
 .album {
     width: 25%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -298,11 +298,13 @@ a {
 .album-picture {
     height: 3rem;
     transform: scale(0.7);
-    position: absolute;
     left: 0;
     margin-left: 0.4rem;
 }
-
+.album-picture>img{
+    height: 60px;
+    width: 50px;
+}
 .para1 {
     font-size: 0.9rem;
     height: 0.3rem;
@@ -316,8 +318,7 @@ a {
 }
 
 .icon1 {
-    margin-left: 2.8rem;
-    margin-right: 1.2rem;
+
     opacity: 0.7;
     transform: scale(1);
 }
